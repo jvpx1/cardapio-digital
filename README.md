@@ -2,7 +2,7 @@
 
 Um gerenciador de cardápio simples e funcional, feito com **HTML, CSS e JavaScript puro** — sem frameworks, sem bibliotecas. Os dados ficam salvos no navegador do usuário via `localStorage`, permitindo cadastrar, visualizar e excluir pratos de forma prática.
 
-🔗 **Acesse o projeto:** [https://jvpx1.github.io/cardapio-digital/](https://jvpx1.github.io/cardapio-digital/)
+🔗 **Acesse o projeto:** [https://github.com/jvpx1/cardapio-digital](https://github.com/jvpx1/cardapio-digital)
 
 ## ✨ Funcionalidades
 
