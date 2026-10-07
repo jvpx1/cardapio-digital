@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Cadastrar Prato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container-single">
+    <section class="card">
+      <div class="header-action">
+        <h2>Cadastrar Novo Prato</h2>
+        <a href="cardapio.html" class="btn-link">Ver Cardápio ➔</a>
+      </div>
+
+      <form id="form-cardapio">
+        <div class="form-group">
+          <label for="nome">Nome do Prato / Item</label>
+          <input type="text" id="nome" required placeholder="Ex: Filé a Parmegiana">
+        </div>
+
+        <div class="form-group">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" required>
+            <option value="">Selecione...</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Prato Principal">Prato Principal</option>
+            <option value="Sobremesa">Sobremesa</option>
+            <option value="Bebida">Bebida</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="preco">Preço (R$)</label>
+          <input type="number" id="preco" step="0.01" min="0" required placeholder="0.00">
+        </div>
+
+        <div class="form-group">
+          <label for="descricao">Descrição / Ingredientes</label>
+          <textarea id="descricao" placeholder="Acompanha arroz, fritas e molho especial..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Salvar no Cardápio</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
