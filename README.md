@@ -56,5 +56,4 @@ Um gerenciador de cardápio simples e funcional, feito com **HTML, CSS e JavaScr
 
 2. Entre na pasta:
    cd cardapio-digital
-
-3. Abra o arquivo index.html no navegador e pronto! Não precisa de servidor nem instalação. 🎉 
+3. Abra o arquivo admin.html no navegador e pronto! Não precisa de servidor nem instalação. 🎉 
