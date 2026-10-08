@@ -24,7 +24,7 @@ Um gerenciador de cardápio simples e funcional, feito com **HTML, CSS e JavaScr
   - Manipulação de DOM (`createElement`, `append`, `querySelector`)
   - Eventos (`addEventListener`, delegação de eventos)
   - Armazenamento local (`localStorage`, `JSON.parse` / `JSON.stringify`)
-  - Arrow functions, template literals, `dataset`, `filter`, `find`
+  - Arrow functions, template literals, `dataset`, `filter`
 
 ---
 

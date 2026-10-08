@@ -4,31 +4,36 @@ const listaCardapio = document.getElementById("lista-cardapio")
 
 // Utilitárias
 
+// Pega o valor salvo no localStorage (uma string JSON) e transforma em
+// um array de objetos JavaScript. Se não existir nada salvo, retorna [].
 const obter_cardapio = () =>{
     return JSON.parse(localStorage.getItem('pratos')) || [];
-}
+}//localStorage → string JSON → JSON.parse → array/objeto JS   (LER)
 
+
+//recebe um array e transforma em string no formato JSON
+//(porque o localStorage só aceita strings) e salva no navegador.
 const salvar_cardapio = pratos => localStorage.setItem('pratos', JSON.stringify(pratos));
+//array/objeto JS → JSON.stringify → string JSON → localStorage   (SALVAR)
 
-
-//adicionando um listerner de eventos para o form
-
-if(formCardapio){//se tiver no forms, então isso ai acontece:
+//adicionando um listener de eventos para o form
+if(formCardapio){//se tiver no forms, então acontece:
     formCardapio.addEventListener('submit', (event) =>{
     event.preventDefault()//evita que a página recarregue ao enviar o form
     
-
+    //obtendo valores do formulário
     const nome = document.getElementById("nome").value.trim();
     const categoria = document.getElementById("categoria").value;
     const preco = parseFloat(document.getElementById("preco").value);
     const descricao = document.getElementById("descricao").value.trim();
 
+    //checagem para ver se o usuário está colocando os valores corretos
     if(!nome || !categoria || isNaN(preco) || preco<=0 ){
         alert("Preencha todos os campos corretamente!")
         return;
         }
 
-    //pegando os valores 
+    //Colocando valores em NovoPrato
     const novoPrato ={
         id: Date.now(),
         nome,
@@ -44,8 +49,6 @@ if(formCardapio){//se tiver no forms, então isso ai acontece:
     pratos_salvos.push(novoPrato); //coloca o objeto na lista
     salvar_cardapio(pratos_salvos)//salva o ojeto novo na storage 
 
-    // console.log("prato salvo!", pratos_salvos);
-    // document.dispatchEvent(new Event('prato Adicionado'));
 
     alert(`Prato ${nome} foi adicionado`)
     formCardapio.reset();
