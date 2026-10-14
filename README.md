@@ -188,7 +188,7 @@ Esse projeto foi construído do zero com o objetivo de aprender **desenvolviment
 **João Ribeiro**
 
 - GitHub: [@jvpx1](https://github.com/jvpx1)
-- LinkedIn: [Seu LinkedIn](https://linkedin.com/in/seu-perfil)
+- LinkedIn: [João Vitor Ribeiro](https://www.linkedin.com/in/joãoribeiro2626)
 
 ---
 
