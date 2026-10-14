@@ -12,6 +12,7 @@
       display: flex;
       justify-content: center;
       padding: 2rem 1rem;
+      padding-top: 70px
     }
 
     .container-single {
@@ -118,6 +119,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      width: 30em;
     }
 
     .item-info h3 {
@@ -162,3 +164,54 @@
     .btn-excluir:hover {
       background-color: #dc2626;
     }
+
+     .btn-editar {
+    background-color: #5544efa6;
+    display: block;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    }
+
+    .btn-excluir:hover {
+      background-color: #dc2626;
+    }
+
+    .navegacao {
+    position: fixed;         
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    z-index: 100;             
+    justify-content: center;
+}
+
+.btn-nav {
+    padding: 8px 16px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.btn-nav:hover {
+    background-color: #1d4ed8;
+}
+
+/* Esconde as views por padrão */
+section[hidden] {
+    display: none;
+}
